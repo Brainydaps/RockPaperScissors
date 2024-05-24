@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+	xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+	xmlns:local="clr-namespace:RockPaperScissors"
+	xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+	x:Class="RockPaperScissors.MainPage">
+
+    <VerticalStackLayout>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Column="0" Text="User" FontSize="18" />
+            <Label Grid.Column="1" Text="Computer" FontSize="18" />
+            <Label Grid.Column="2" Text="Draw" FontSize="18" />
+            <Label Grid.Column="3" Text="Rounds" FontSize="18" />
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Label Grid.Column="0" Grid.Row="0" x:Name="userScoreLabel" Text="0" FontSize="18" />
+            <Label Grid.Column="1" Grid.Row="0" x:Name="computerScoreLabel" Text="0" FontSize="18" />
+            <Label Grid.Column="2" Grid.Row="0" x:Name="drawScoreLabel" Text="0" FontSize="18" />
+            <Label Grid.Column="3" Grid.Row="0" x:Name="roundsLabel" Text="0" FontSize="18" />
+        </Grid>
+        <Label x:Name="resultLabel" Text="" FontSize="24" />
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Grid.Column="0" Text="Rock" Clicked="RockButton_Clicked" />
+            <Button Grid.Column="1" Text="Scissors" Clicked="ScissorsButton_Clicked" />
+            <Button Grid.Column="2" Text="Paper" Clicked="PaperButton_Clicked" />
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
