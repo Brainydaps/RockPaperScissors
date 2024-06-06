@@ -41,5 +41,5 @@ We are working on integrating AI to enable the computer to make intelligent choi
 - *AI Integration:*
   - Enhance the computer's decision-making process with AI to make more intelligent choices.
 
-Feel free to contribute or report issues on the [GitHub repository](https://github.com/yourusername/RockPaperScissors).
+Feel free to contribute or report issues on the [GitHub repository](https://github.com/Brainydaps/RockPaperScissors).
 
